@@ -1,0 +1,20 @@
+Sales and Purchase Order Calculation Validation
+
+**Objective:** Verify the accuracy of line totals, GST amounts, and grand totals in sales and purchase order datasets.
+
+**Validation rules:**
+
+1. Line Total = Quantity × Unit Price (Sales)
+2. Line Total = Quantity × Unit Cost (Purchase)
+3. GST Amount = Line Total × GST Rate / 100
+4. Grand Total = Line Total + GST Amount
+
+**Results:**
+
+| Validation | Sales Orders | Purchase Orders |
+|---|---:|---:|
+| Line total mismatches | 0 | 0 |
+| GST mismatches | 0 | 0 |
+| Grand total mismatches | 0 | 0 |
+
+**Conclusion:** All six validation checks passed. No financial calculation discrepancies were identified in the sales and purchase order line datasets.
