@@ -1,0 +1,29 @@
+Invoice and Payment Validation
+
+**Objective:** Validate invoice amounts, payment records, and payment status consistency.
+
+**Invoice Validation Results:**
+- Total invoices: 18,033
+- Missing matching sales orders: 0
+- Order value mismatches: 0
+- GST mismatches: 0
+- Grand total mismatches: 0
+
+**Payment Validation Results:**
+- Total payment records: 19,257
+- Payments without matching invoices: 0
+- Zero or negative payments: 0
+- Complete duplicate payment rows: 0
+- Duplicate payment IDs: 202
+- Invoices with multiple payments: 2,562
+- Invoices with excess payments: 233
+- Unpaid invoices with recorded payments: 35
+
+**Key Findings:**
+
+Invoice calculations matched their corresponding sales orders. However,
+payment analysis identified repeated payment IDs, excess payments, and inconsistencies 
+between invoice payment status and recorded payment transactions.
+
+**Conclusion:** Invoice calculations passed all validation checks. Payment records require 
+further investigation and reconciliation. No records were deleted or modified during validation.
