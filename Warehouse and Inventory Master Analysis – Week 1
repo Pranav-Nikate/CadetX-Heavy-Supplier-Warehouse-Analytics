@@ -1,0 +1,48 @@
+# Warehouse and Inventory Master Analysis – Week 1
+
+## 1. Dataset Overview
+- Total inventory records: 180
+- Unique products: 30
+- Unique branches: 6
+- Unique warehouse bins: 95
+
+## 2. Maximum Stock Limit Analysis
+- Records above maximum stock: 180
+- Records within maximum stock: 0
+- Total excess stock: 19,245,350 units
+
+All 180 inventory records exceed their defined maximum stock limits. This requires further investigation.
+
+## 3. Warehouse Bin Analysis
+- Total unique warehouse bins: 95
+- Maximum records in a single bin: 5
+- Minimum records in a single bin: 1
+- E17 and F08 have the highest number of inventory records, with 5 each.
+
+## 4. Branch-wise Stock Limit Analysis
+
+| Branch | Total Excess Stock |
+|---|---:|
+| Delhi (DEL001) | 3,278,926 |
+| Pune (PUN001) | 3,247,706 |
+| Hyderabad (HYD001) | 3,235,854 |
+| Chennai (CHN001) | 3,224,603 |
+| Ahmedabad (AHM001) | 3,145,302 |
+| Kolkata (KOL001) | 3,112,959 |
+
+## 5. Key Findings
+1. All six branches have stock quantities exceeding their maximum stock limits.
+2. Delhi has the highest recorded excess stock.
+3. Kolkata has the lowest recorded excess stock.
+4. Inventory is distributed across 95 warehouse bins.
+5. Each branch maintains 30 different products.
+
+## 6. Business Recommendations
+1. Investigate why current stock exceeds maximum stock limits across all branches.
+2. Review stock planning and inventory replenishment policies.
+3. Examine warehouse storage capacity and bin allocation.
+4. Investigate whether stock quantities have a data scaling or generation issue.
+5. Reconcile inventory master records with the stock ledger before making operational changes.
+
+## 7. Conclusion
+The inventory analysis
