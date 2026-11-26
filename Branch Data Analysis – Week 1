@@ -1,0 +1,56 @@
+# Branch Data Analysis – Week 1
+
+## 1. Dataset Overview
+- Total branches: 6
+- Total columns: 13
+- Duplicate branch IDs: 0
+- Duplicate branch names: 0
+- Complete duplicate rows: 0
+- Missing values: 0
+
+## 2. Data Quality Validation
+The branch dataset passed all performed validation checks:
+- Negative warehouse capacity: 0
+- Zero warehouse capacity: 0
+- Negative employees: 0
+- Zero employees: 0
+- Negative monthly revenue: 0
+- Negative operational costs: 0
+- Invalid market demand index: 0
+- Invalid service centre values: 0
+
+## 3. Branch Distribution
+- West: 2 branches
+- South: 2 branches
+- North: 1 branch
+- East: 1 branch
+
+## 4. Warehouse Analysis
+- Total warehouse capacity: 226,080 sqft
+- Average warehouse capacity: 37,680 sqft
+- Highest capacity: Delhi Central (45,230 sqft)
+- Lowest capacity: Kolkata East Depot (29,880 sqft)
+
+## 5. Financial Analysis
+- Highest monthly revenue: Delhi Central (₹52,34,890)
+- Highest operating profit: Delhi Central (₹20,45,890)
+- Highest profit margin: Chennai South Hub (40.04%)
+- Lowest operating profit: Kolkata East Depot (₹11,51,770)
+
+## 6. Employee Productivity Analysis
+- Highest revenue per employee: Pune Distribution (₹59,312.43)
+- Highest profit per employee: Kolkata East Depot (₹23,505.51)
+- Lowest revenue per employee: Ahmedabad West Hub (₹51,522.06)
+- Lowest profit per employee: Ahmedabad West Hub (₹19,490.32)
+
+## 7. Business Recommendations
+1. Study the operating practices of Pune Distribution to understand its higher revenue per employee.
+2. Investigate Ahmedabad West Hub's comparatively lower productivity indicators.
+3. Maintain the strong financial performance of Delhi Central.
+4. Study Chennai's cost and revenue structure to understand its higher profit margin.
+5. Review warehouse capacity utilisation before making expansion decisions.
+
+## 8. Conclusion
+The branch dataset passed all performed data quality checks. The analysis identified differences in branch
+distribution, warehouse capacity, financial performance and employee productivity. These insights can support better
+branch management and warehouse planning decisions.
