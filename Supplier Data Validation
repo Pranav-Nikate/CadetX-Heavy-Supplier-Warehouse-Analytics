@@ -1,0 +1,36 @@
+Supplier Data Validation
+
+**Objective:** Validate supplier records, identify duplicate entries, check missing values, and verify business rules.
+
+**Dataset Information:**
+- Total records: 8
+- Total columns: 12
+
+**Validation Results:**
+- Duplicate supplier IDs: 0
+- Duplicate supplier names: 0
+- Complete duplicate rows: 0
+- Missing values: 0
+- Negative lead times: 0
+- Zero lead times: 0
+- Invalid reliability scores: 0
+- Invalid import duty rates: 0
+
+**Supplier Distribution:**
+- OEM: 3
+- Distributor: 3
+- Local Vendor: 2
+
+**Product Category Distribution:**
+- Small Parts: 3
+- Large Parts: 3
+- Medium Parts: 2
+
+**Supplier Reliability:**
+- Average score: 4/5
+- Minimum score: 3
+- Maximum score: 5
+
+**Conclusion:** The supplier dataset passed all duplicate,
+missing-value, and business-rule validation checks. No data-quality
+issues were identified in the checks performed.
