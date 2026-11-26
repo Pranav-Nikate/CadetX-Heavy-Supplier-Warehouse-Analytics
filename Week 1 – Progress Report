@@ -10,15 +10,14 @@
 
 ## 2. Week 1 Objectives
 
-The main objectives were:
-
 1. Understand the project and business domain.
 2. Load and explore all 12 CSV datasets.
 3. Understand dataset structures and data types.
 4. Identify missing values and duplicate records.
-5. Check primary key and foreign key relationships.
+5. Validate primary key and foreign key relationships.
 6. Perform initial data cleaning and transformations.
-7. Document data-quality findings.
+7. Conduct initial customer, supplier, branch and inventory analysis.
+8. Document data-quality findings and business observations.
 
 ## 3. Work Completed
 
@@ -26,30 +25,61 @@ The main objectives were:
 |---|---|
 | Loaded all 12 datasets | Completed |
 | Initial dataset exploration | Completed |
-| Checked data types | Completed |
+| Data type analysis | Completed |
 | Missing value analysis | Completed |
-| Full duplicate row analysis | Completed |
+| Complete duplicate row analysis | Completed |
 | Duplicate ID investigation | Completed |
 | Date conversion | Completed |
 | Warehouse capacity conversion | Completed |
-| Product dimension extraction | Completed |
-| Product volume calculation | Completed |
 | Foreign key validation | Completed |
+| Sales and purchase calculation validation | Completed |
+| Customer data analysis | Completed |
+| Supplier data validation | Completed |
+| Branch data analysis | Completed |
+| Warehouse and inventory analysis | In progress |
+| Invoice and payment validation | Further investigation required |
 
 ## 4. Dataset Summary
 
-- Total datasets: 12
-- Total records: 605,141
-- Total columns: 134
+- **Total datasets:** 12
+- **Total records:** 605,141
+- **Total columns:** 134
 
 ## 5. Key Findings
 
-- No fully duplicated rows were identified.
-- 2,370 missing received dates were found in cancelled purchase orders.
-- Repeated IDs were identified in invoices and payments.
+### Data Quality
+- No complete duplicate rows were identified across the 12 datasets.
+- 2,370 missing received dates were associated with cancelled purchase orders.
 - Nine foreign key relationships were checked successfully, with zero unmatched records.
-- Warehouse capacity was converted into a numeric format.
-- Product dimensions and volume were calculated.
+- Warehouse capacity values were converted into numeric format.
+- Product dimensions and volume calculations were prepared.
+
+### Customer Analysis
+- Total customer records: 500.
+- No missing values or complete duplicate rows were identified.
+- No invalid customer ratings or negative financial values were identified in the tested fields.
+- Government customers contributed the highest total purchase value.
+
+### Supplier Analysis
+- Total suppliers: 8.
+- No missing values or duplicate supplier IDs were identified.
+- Supplier reliability scores were within the expected 1–5 range.
+
+### Branch Analysis
+- Total branches: 6.
+- No missing values or duplicate branch IDs were identified.
+- Delhi recorded the highest average monthly revenue.
+- Chennai recorded the highest estimated operating profit margin.
+
+### Warehouse and Inventory Analysis
+- Total inventory records: 180.
+- Total unique products: 30.
+- Total unique branches: 6.
+- Total unique warehouse bins: 95.
+- All 180 inventory records were above their recorded maximum stock limits.
+- Total calculated excess stock: 19,245,350 units.
+
+These stock-limit findings require further investigation before making inventory adjustments.
 
 ## 6. Tools Used
 
@@ -64,19 +94,23 @@ The main objectives were:
 1. Repeated invoice IDs and payment IDs require further investigation.
 2. Some columns required data type conversion.
 3. Text-based warehouse capacity and product dimensions required transformation.
+4. Inventory records showed stock quantities above maximum stock limits.
+5. Some inventory balances require reconciliation with the stock ledger.
 
 ## 8. Next Steps
 
-1. Continue data profiling and validation.
-2. Investigate repeated transaction IDs.
-3. Perform further data integration.
-4. Prepare initial business KPIs.
-5. Begin product, inventory and warehouse analysis in upcoming sprints.
+1. Complete the remaining inventory analysis and verification.
+2. Investigate invoice and payment relationships.
+3. Perform further data integration and validation.
+4. Develop initial business KPIs.
+5. Continue foundation and exploration activities during the upcoming project weeks.
 
 ## 9. Conclusion
 
-Week 1 established the initial data foundation for the Heavy Supplier, Inventory & Warehouse Analytics project. The datasets were explored, validated and transformed for further analysis.
+Week 1 established the initial data foundation for the Heavy Supplier, Inventory & Warehouse Analytics project.
 
-The findings and documentation will support the next stages of the 12-week project.
+All 12 datasets were loaded and explored. Initial data-quality validation was performed, and customer, supplier, branch and warehouse-related analysis produced useful business observations.
+
+The identified data-quality issues and business findings will support further analysis, inventory optimisation and supply-chain performance improvement during the upcoming project weeks.
 
 **Prepared as part of:** CadetX Virtual Work Experience
